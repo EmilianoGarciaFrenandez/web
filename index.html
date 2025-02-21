@@ -1,0 +1,259 @@
+<!--Emiliano García Fernández / 248240
+Grupo:B 
+Fecha: 10/02/2025 
+introduccion a HTML5 y CSS3-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dekko&family=Monomaniac+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&display=swap');
+
+
+        body {
+            background-color: #fadda2;
+            text-align: center;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #6b61ff;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+
+        section {
+            width: 80%;
+            height: auto;
+            background-color: #66a1ff;
+            border-radius: 10px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px
+        }
+
+        footer {
+            width: 100%;
+            height: 250px;
+            background-color: #6b61ff;
+            margin-top: 10px
+        }
+
+        .hermano {
+            width: 70%;
+            height: auto;
+            background-color: #8ecde6;
+            margin: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #f0eff4;
+
+        }
+
+        h1 {
+
+            font-family: "montserrat", serif;
+            color: #fadda2;
+        }
+
+        h2 {
+
+            font-family: "montserrat", serif;
+            color: #fadda2;
+        }
+
+        h3 {
+
+            font-family: "montserrat", serif;
+            color: #fadda2;
+        }
+
+        h4 {
+
+            font-family: "montserrat", serif;
+            color: #fadda2;
+        }
+
+        h5 {
+
+            font-family: "montserrat", serif;
+            color: #fadda2;
+        }
+
+        h6 {
+
+            font-family: "montserrat", serif;
+            color: #fadda2;
+        }
+
+
+        .imgcentro {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        p {
+            color: #f0eff4;
+            font-family: "Dekko", serif;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: #6b61ff;
+            color: #6b61ff;
+            font-family: "Monomaniac One", serif;
+        }
+
+        .link {
+            color: #fadda2;
+            font-family: "Monomaniac One", serif;
+        }
+
+        .imagendefondo {
+            width: 1200px;
+            height: 675px;
+            background-repeat: no-repeat;
+            background-image: url(https://pbs.twimg.com/media/GC49pMgWsAA0sMa.jpg);
+            background-size: cover;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section id="Inicio"></section>
+    <Div class="navbar">
+        <a class="link" href="#Inicio">inicio</a>
+        <a class="link" href="#Insertar">ir a imagenes</a>
+        <a class="link" href="#Listas">ir a listas</a>
+
+    </Div>
+    <header id="header">
+        <h1 style="color: #fadda2;">Esto es un Header</h1>
+        <ul>
+            <il><a href="#Insertar">ir a imagenes</a></il>
+            <il><a href="#Listas">ir a listas</a></il>
+
+
+        </ul>
+    </header>
+    <div class="imagendefondo"></div>
+    <section>
+
+
+        <h1>Bitacora de Emiliano Garcia Fernandez (esto es un h1)</h1>
+        <h2>esto es un h2</h2>
+        <h3>esto es un h3</h3>
+        <h4>esto es un h4</h4>
+        <h5>esto es un h5</h5>
+        <h6>esto es un h6</h6>
+        <p>Esto es un parrafo</p>
+        <h3>h's</h3>
+        <p>mientras el numero de h va aumentando el tamaño va disminuyendo y tiene un orden jerarquico donde el numero
+            menor
+
+            es el que tiene mayor importancia</p>
+
+        <div id="">
+            <h3>Idiomas</h3>
+            <p>todas las paginas web tiene un idioma que se indica al inicio del archivo html con la etiqueta html
+                lang=" "
+                y
+                entre las comillas se pone la abreviacion del idioma, </p>
+            <h3>Dom</h3>
+            <p>El dom es el una representacion grafica de la pagina web donde se representa por categorias y dentro de
+                las
+                categorias puede haber mas categorias o elementos</p>
+        </div>
+    </section>
+    <section>
+        <div id="Insertar">
+            <h1>Elementos insetrados</h1>
+            <a class="link" href="https://www.youtube.com/@AQUISI_">Esto es un boton que te redirecciona a alguna otra
+                pagina </a>
+
+            <p>Esto es un iframe, sirve para insertar elementos de una pagina web externa</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h32S11hW2Vs?si=SYKi7D65AlF6ZF8C"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Esto es un iframe</iframe>
+            <p>Estas son imagenes y se pueden insertar ya sea con un link externo o con archivos locales de un
+                equipo/carpeta
+            </p>
+            <ul>
+                <li>esta es una imagen en archivo local</li>
+            </ul>
+            <img src="img/bb47b931f0445f989b5d4bc4bab6d96c.jpg">
+            <ul>
+                <li>esta es una imagen sacada de un link externo</li>
+
+            </ul>
+            <img src="https://imagedelivery.net/LBWXYQ-XnKSYxbZ-NuYGqQ/e755b96e-3a16-4534-a09f-0c9f76f25e00/avatarhd"
+                class="imgcentro" width="315" height="315">
+        </div>
+    </section>
+
+    <article></article>
+
+    <div id="Listas">
+        <div class="hermano">
+            <ul>
+                <li>Esta es una lista </li>
+                <li>los elementos no tienen marcado un orden</li>
+                <li>Y esta marcado con puntos</li>
+            </ul>
+
+        </div>
+        <div class="hermano">
+            <ol start="10">
+                <li>Esto es una lista ordenada </li>
+                <li>Puedes poner cosas en modode lista numerada</li>
+                <li>De forma acendente para darle un orden</li>
+                <li>Y puede empezar desde cualquier numero </li>
+                <li>Especificado con la etiqueta: start="n"</li>
+                <li>Donde "n" es el numero donde uno quiere que empiece la lista</li>
+                <li>Dentro de la etiqueta</li>
+            </ol>
+
+        </div>
+        <div class="hermano">
+            <ol reversed>
+                <li>Tambien dentro de las listas ordenadas</li>
+                <li>Se puede hacer que la lista vaya en cuenta regresiva</li>
+                <li>Y los numeros de la lista dependen de la cantidad de elementos</li>
+                <li>Que contenga esta lista</li>
+                <li>Y para este tipo de lista se usa la etiqueta: "reversed" </li>
+
+            </ol>
+
+
+        </div>
+    </div>
+
+    <SEction>
+        <h1>Diagrama de pagina web</h1>
+        <img src="Captura de pantalla 2025-02-19 134525.png" class="imgcentro" width="315" height="315">
+    </SEction>
+
+
+    <footer></footer>
+</body>
+
+</html>
