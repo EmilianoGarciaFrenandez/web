@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Monomaniac+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&display=swap');
+
+/* ======= BASE ======= */
+body {
+    background-color: #fadda2;
+    text-align: center;
+    font-family: "Dekko", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", serif;
+    color: #fadda2;
+}
+
+p,
+li {
+    color: #f0eff4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a[href^="https"] {
+    color: #fadda2;
+}
+
+img[src$=".png"] {
+    border: 2px solid blue;
+}
+
+/* ======= LAYOUT ======= */
+header,
+footer {
+    width: 100%;
+    background-color: #6b61ff;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+}
+
+footer {
+    height: 250px;
+    margin-top: 10px;
+}
+
+section {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #66a1ff 20%, #6b61ff 80%);
+    text-align: center;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #6b61ff;
+    font-family: "Monomaniac One", serif;
+}
+
+/* ======= COMPONENTES ======= */
+.hermano,
+.cuadrado,
+.imgcentro {
+    background-color: #8ecde6;
+    border: 10px solid #fadda2;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.54);
+}
+
+.hermano {
+    width: 70%;
+    margin: 50px auto;
+    color: #f0eff4;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.imgcentro {
+    display: block;
+    margin: 0 auto;
+}
+
+.cuadrado {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    display: block;
+}
+
+.btn {
+    background-color: #6b61ff;
+    color: #fadda2;
+    padding: 5px;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: #66a1ff;
+}
+
+.link {
+    color: #fadda2;
+    font-family: "Monomaniac One", serif;
+}
+
+/* ======= FONDOS ======= */
+.imagendefondo {
+    background-image: url(https://pbs.twimg.com/media/GC49pMgWsAA0sMa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ======= ANIMACIONES ======= */
+@keyframes mover {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes escalar {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+}
+
+@keyframes slide {
+    20% {
+        margin-left: 0;
+    }
+
+    30%,
+    50% {
+        margin-left: -728px;
+    }
+
+    60%,
+    70% {
+        margin-left: -1456px;
+    }
+
+    80%,
+    90% {
+        margin-left: -2184px;
+    }
+}
+
+.cuatro {
+    width: 200px;
+    height: 200px;
+    background-color: #fadda2;
+    animation: mover 2s infinite;
+}
+
+/* ======= SLIDESHOW ======= */
+#slideshow {
+    text-align: center;
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin-bottom: 400px;
+}
+
+.slide-wrapper {
+    width: 2912px;
+    animation: slide 18s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+
+.slide:nth-child(1) {
+    background-color: rgb(216, 41, 243);
+}
+
+.slide:nth-child(2) {
+    background-color: coral;
+}
+
+.slide:nth-child(3) {
+    background-color: greenyellow;
+}
+
+.slide:nth-child(4) {
+    background-color: brown;
+}
+
+/* ======= FIGURAS POSICIONADAS ======= */
+.uno,
+.dos {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+}
+
+.uno {
+    background-color: #8ecde6;
+    top: 15px;
+    left: 15px;
+}
+
+.dos {
+    background-color: #66a1ff;
+}
+
+.tres {
+    color: #6b61ff;
+    position: absolute;
+    z-index: 2;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://i.ytimg.com/vi/FV7fUSLVoKA/maxresdefault.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
